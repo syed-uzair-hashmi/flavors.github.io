@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flavors</title>
+    <!-- AOS Library link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- boostrap link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    <!-- font-aesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- my-links -->
+    <link rel="stylesheet" href="Assets/css/style.css">
+
+</head>
+
+<body>
+    <a id="tbtn"><i class="fa-solid fa-arrow-up"></i></a>
+    <!-- navbar-starts -->
+    <div class="container-fluid my-navbar">
+        <div class="container my-nav">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand ml-5 text-left logo " href="#"><h2>FLA<span>VORS</span></h2></a>
+                <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class=" nav-item ">
+                            <a class="nav-link " href="index.html" onclick="closeNavbar()">Home</a>
+                        </li>
+
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Products
+                            </a>
+                            <div class="dropdown-menu my-drop" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="#New_Arrival">New Arrival</a>
+                              <a class="dropdown-item" href="#Best_Sellers">Best Sellers</a>
+                              <a class="dropdown-item" href="#Hot_Deals">Hot Deals</a>
+                              <a class="dropdown-item" href="#Spice_Seed">Spice Seed</a>
+                              <a class="dropdown-item" href="#Our_Product">Our Product</a>
+                            </div>
+                          </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#gallery" onclick="closeNavbar()">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about" onclick="closeNavbar()">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-toggle="modal" data-target="#contactpopup">Contact us</a>
+                        </li>
+
+                    </ul>
+                    <div class="counter mt-1">
+                        <p>Total visitors <span class="btn text-white" id="mycounter">0</span></p>
+                    </div>
+                </div>
+
+            </nav>
+        </div>
+    </div>
+    <!-- navbar-ends -->
+    <!-- slider-starts -->
+    <section class="slider">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                    
+                        <div class="carousel-item active">
+                        
+                            <img src="Assets/images/slider/s6.jpg" width="100%" class="img-fluid" alt="">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2 class="s-heading">Fla<span>vors</span>
+
+                                </h2>
+                                <h6>Savor Every Bite: Where Spice Meets Perfection.</h6>
+
+                             
+                              </div>
+                        </div>
+                       
+                    <div class="carousel-item ">
+                        <img src="Assets/images/slider/s4.jpg" width="100%" class="img-fluid" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Assets/images/slider/s8.jpg" width="100%" class="img-fluid" alt="">
+                    </div>
+             
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        </div>
+    </section>
+    <!-- slider-ends -->
+    <!-- main-section-starts -->
+    <section class="new-arrival my-5" id="product">
+        <div class="container ">
+            <div class="col-12 my-4">
+                <h2 class="heading" id="New_Arrival">
+                    New Arrival
+                    <hr class="mt-2" style="height: 2px; width: 110px; background: orange; margin: 0px auto; ">
+                </h2>
+            </div>
+            <div class="row no-gutters d-flex justify-content-space-between align-items-center"  data-aos="zoom-in-down" >
+
+                <div class="card m-card col-12 col-md-6 col-lg-3" >
+                    <img src="Assets/images/categries/products/onion-mix.webp" class="img-fluid" alt="">
+                    <div class="card-body ">
+                        <h3 class="card-heading text-center">Onion Soup Mix <span>(New)</span></h3>
+                        <p class="card-para">As low as <span class="price">$6 </span> </p>
+                        <button class="btn p-btn" data-toggle="modal" data-target="#myModal"
+                            data-product-id="onion_mix"> View
+                            Product</button>
+                    </div>
+                </div>
+                <div class="card m-card col-12 col-md-6 col-lg-3">
+                    <img src="Assets/images/categries/products/carrot.jpg" class="img-fluid" alt="">
+                    <div class="card-body ">
+                        <h3 class="card-heading text-center"> Carrot Powder <span>(New)</span></h3>
+                        <p class="card-para">As low as <span class="price">$5.30 </span></p>
+                        <button class="btn p-btn" data-toggle="modal" data-target="#myModal" data-product-id="carrot">
+                            View Product</button>
+                    </div>
+                </div>
+                <div class="card m-card col-12 col-md-6 col-lg-3">
+                    <img src="Assets/images/categries/products/pumkin.jpg" class="img-fluid" alt="">
+                    <div class="card-body ">
+                        <h3 class="card-heading text-center"> Pumpkin Powder <span>(New)</span></h3>
+                        <p class="card-para">As low as <span class="price">$4.50 </span></p>
+                        <button class="btn p-btn" data-toggle="modal" data-target="#myModal" data-product-id="pumkin">
+                            View Product</button>
+                    </div>
+                </div>
+                <div class="card m-card col-12 col-md-6 col-lg-3">
+                    <img src="Assets/images/categries/products/star-seed.jpg" class="img-fluid" alt="">
+                    <div class="card-body ">
+                        <h3 class="card-heading text-center"> Anise Star <span>(New)</span></h3>
+                        <p class="card-para">As low as <span class="price">$6.24 </span></p>
+                        <button class="btn p-btn" data-toggle="modal" data-target="#myModal" data-product-id="star">
+                            View Product</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+            <section class="best-seller" id="Best_Sellers">
+                <div class="container">
+                    <div class="col-12 my-4">
+                        <h2 class="heading" >
+                            Best Sellers
+                            <hr class="mt-2" style="height: 2px; width: 110px; background: orange; margin: 0px auto; ">
+                        </h2>
+                    </div>
+                    <div class="row no-gutters mt-4"
+                    style="display: flex; justify-content: space-between; align-items: center;" data-aos="zoom-in-down">
+    
+                    <div class="card m-card col-12 col-md-6 col-lg-3">
+                        <img src="Assets/images/categries/products/ginger-ground.jpg" class="img-fluid" alt="">
+                        <div class="card-body ">
+                            <h3 class="card-heading text-center"> Ginger Ground</h3>
+                            <p class="card-para">As low as <span class="price">$4.99 </span></p>
+                            <button class="btn p-btn" data-toggle="modal" data-target="#myModal"
+                                data-product-id="ginger_ground"> View Product</button>
+                        </div>
+                    </div>
+                    <div class="card m-card col-12 col-md-6 col-lg-3">
+                        <img src="Assets/images/categries/products/tikka.jpg" class="img-fluid" alt="">
+                        <div class="card-body ">
+                            <h3 class="card-heading text-center"> Tikka Spice</h3>
+                            <p class="card-para">As low as <span class="price">$4.50 </span></p>
+                            <button class="btn p-btn" data-toggle="modal" data-target="#myModal" data-product-id="tikka">
+                                View Product</button>
+                        </div>
+                    </div>
+                    <div class="card m-card col-12 col-md-6 col-lg-3">
+                        <img src="Assets/images/categries/products/red-pepper-crush.jpg" class="img-fluid" alt="">
+                        <div class="card-body ">
+                            <h3 class="card-heading text-center"> Red Pepper Crush</h3>
+                            <p class="card-para">As low as <span class="price">$7.20 </span></p>
+                            <button class="btn p-btn" data-toggle="modal" data-target="#myModal"
+                                data-product-id="red_crush"> View Product</button>
+                        </div>
+                    </div>
+                    <div class="card m-card col-12 col-md-6 col-lg-3">
+                        <img src="Assets/images/categries/products/turmeric.jpg" class="img-fluid" alt="">
+                        <div class="card-body ">
+                            <h3 class="card-heading text-center"> Turmeric Powder</h3>
+                            <p class="card-para">As low as <span class="price">$5.34 </span></p>
+                            <button class="btn p-btn" data-toggle="modal" data-target="#myModal" data-product-id="turmeric">
+                                View Product</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </section>
+           
+          <section class="spice-seeds" id="Spice_Seed">
+            <div class="container">
+                <div class="col-12 my-4">
+                    <h2 class="heading" >
+                        Spice Seeds
+                        <hr class="mt-2" style="height: 2px; width: 110px; background: orange; margin: 0px auto; ">
+                    </h2>
+                </div>
+                <div class="row no-gutters mt-4"
+                    style="display: flex; justify-content: space-between; align-items: center;" data-aos="zoom-in-down"
+                    >
+    
+                    <div class="card m-card col-12 col-md-6 col-lg-3">
+                        <img src="Assets/images/categries/products/Clove-seed.jpg" class="img-fluid" alt="">
+                        <div class="card-body ">
+                            <h3 class="card-heading text-center"> Clove Seed</h3>
+                            <p class="card-para">As low as <span class="price">$4.99 </span></p>
+                            <button class="btn p-btn" data-toggle="modal" data-target="#myModal" data-product-id="clove">
+                                View Product</button>
+                        </div>
+                    </div>
+                    <div class="card m-card col-12 col-md-6 col-lg-3">
+                        <img src="Assets/images/categries/products/kalongi-seed.jpg" class="img-fluid" alt="">
+                        <div class="card-body ">
+                            <h3 class="card-heading text-center"> Kalonji Seed</h3>
+                            <p class="card-para">As low as <span class="price">$5.50 </span></p>
+                            <button class="btn p-btn" data-toggle="modal" data-target="#myModal" data-product-id="kalonji">
+                                View Product</button>
+                        </div>
+                    </div>
+                    <div class="card m-card col-12 col-md-6 col-lg-3">
+                        <img src="Assets/images/categries/products/methi-seed.jpg" class="img-fluid" alt="">
+                        <div class="card-body ">
+                            <h3 class="card-heading text-center">Methi Seed</h3>
+                            <p class="card-para">As low as <span class="price">$7.20 </span></p>
+                            <button class="btn p-btn" data-toggle="modal" data-target="#myModal" data-product-id="methi">
+                                View Product</button>
+                        </div>
+                    </div>
+                    <div class="card m-card col-12 col-md-6 col-lg-3">
+                        <img src="Assets/images/categries/products/zeera-seed.jpg" class="img-fluid" alt="">
+                        <div class="card-body ">
+                            <h3 class="card-heading text-center"> Fennel Seed</h3>
+                            <p class="card-para">As low as <span class="price">$5.34 </span></p>
+                            <button class="btn p-btn" data-toggle="modal" data-target="#myModal" data-product-id="Fennel">
+                                View Product</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </section>
+         <section class="our-product" id="Our_Product">
+            <div class="container">
+                <div class="col-12 my-4">
+                    <h2 class="heading" >
+                        Our Products
+                        <hr class="mt-2" style="height: 2px; width: 110px; background: orange; margin: 0px auto; ">
+                    </h2>
+                </div>
+                <div class="row no-gutters mt-4"
+                    style="display: flex; justify-content: space-between; align-items: center;" data-aos="zoom-in-down">
+    
+                    <div class="card m-card col-12 col-md-6 col-lg-3">
+                        <img src="Assets/images/categries/products/sesame-seed.jpg" class="img-fluid" alt="">
+                        <div class="card-body ">
+                            <h3 class="card-heading text-center"> Sesame Seed</h3>
+                            <p class="card-para">As low as <span class="price">$4.99 </span></p>
+                            <button class="btn p-btn" data-toggle="modal" data-target="#myModal" data-product-id="Sesame">
+                                View Product</button>
+                        </div>
+                    </div>
+                    <div class="card m-card col-12 col-md-6 col-lg-3">
+                        <img src="Assets/images/categries/products/poultry.jpg" class="img-fluid" alt="">
+                        <div class="card-body ">
+                            <h3 class="card-heading text-center"> Poultry seasoning</h3>
+                            <p class="card-para">As low as <span class="price">$5.50 </span></p>
+                            <button class="btn p-btn" data-toggle="modal" data-target="#myModal" data-product-id="Poultry">
+                                View Product</button>
+                        </div>
+                    </div>
+                    <div class="card m-card col-12 col-md-6 col-lg-3">
+                        <img src="Assets/images/categries/products/blk-pepper-grd.jpg" class="img-fluid" alt="">
+                        <div class="card-body ">
+                            <h3 class="card-heading text-center">Black Pepper Ground</h3>
+                            <p class="card-para">As low as <span class="price">$7.20 </span></p>
+                            <button class="btn p-btn" data-toggle="modal" data-target="#myModal"
+                                data-product-id="Blk_pepper_Grd"> View Product</button>
+                        </div>
+                    </div>
+                    <div class="card m-card col-12 col-md-6 col-lg-3">
+                        <img src="Assets/images/categries/products/carrot.jpg" class="img-fluid" alt="">
+                        <div class="card-body ">
+                            <h3 class="card-heading text-center"> Carrot Powder</h3>
+                            <p class="card-para">As low as <span class="price">$5.30 </span></p>
+                            <button class="btn p-btn" data-toggle="modal" data-target="#myModal" data-product-id="carrot">
+                                View Product</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row no-gutters mt-4"
+                    style="display: flex; justify-content: space-between; align-items: center;"data-aos="zoom-in-down">
+    
+                    <div class="card m-card col-12 col-md-6 col-lg-3">
+                        <img src="Assets/images/categries/products/breed-dip.jpg" class="img-fluid" alt="">
+                        <div class="card-body ">
+                            <h3 class="card-heading text-center"> Breed Dipping Blend</h3>
+                            <p class="card-para">As low as <span class="price">$4.99 </span></p>
+                            <button class="btn p-btn" data-toggle="modal" data-target="#myModal"
+                                data-product-id="Bread_Dipping_Blnd"> View Product</button>
+                        </div>
+                    </div>
+                    <div class="card m-card col-12 col-md-6 col-lg-3">
+                        <img src="Assets/images/categries/products/Clove-seed.jpg" class="img-fluid" alt="">
+                        <div class="card-body ">
+                            <h3 class="card-heading text-center"> Clove Seed</h3>
+                            <p class="card-para">As low as <span class="price">$4.99 </span></p>
+                            <button class="btn p-btn" data-toggle="modal" data-target="#myModal" data-product-id="clove">
+                                View Product</button>
+                        </div>
+                    </div>
+                    <div class="card m-card col-12 col-md-6 col-lg-3">
+                        <img src="Assets/images/categries/products/garlic.jpg" class="img-fluid" alt="">
+                        <div class="card-body ">
+                            <h3 class="card-heading text-center"> Garlic Powder</h3>
+                            <p class="card-para">As low as <span class="price">$7.20 </span></p>
+                            <button class="btn p-btn" data-toggle="modal" data-target="#myModal" data-product-id="Garlic_Powder"> View
+                                Product</button>
+                        </div>
+                    </div>
+                    <div class="card m-card col-12 col-md-6 col-lg-3">
+                        <img src="Assets/images/categries/products/kalongi-seed.jpg" class="img-fluid" alt="">
+                        <div class="card-body ">
+                            <h3 class="card-heading text-center"> Kalonji Seed</h3>
+                            <p class="card-para">As low as <span class="price">$5.34 </span></p>
+                            <button class="btn p-btn" data-toggle="modal" data-target="#myModal" data-product-id="kalonji">
+                                View Product</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row no-gutters mt-4"
+                    style="display: flex; justify-content: space-between; align-items: center;"data-aos="zoom-in-down">
+    
+                    <div class="card m-card col-12 col-md-6 col-lg-3">
+                        <img src="Assets/images/categries/products/onion-mix.webp" class="img-fluid" alt="">
+                        <div class="card-body ">
+                            <h3 class="card-heading text-center"> Onion Mix Soup</h3>
+                            <p class="card-para">As low as <span class="price">$6.00 </span></p>
+                            <button class="btn p-btn" data-toggle="modal" data-target="#myModal"
+                                data-product-id="onion_mix"> View Product</button>
+                        </div>
+                    </div>
+                    <div class="card m-card col-12 col-md-6 col-lg-3">
+                        <img src="Assets/images/categries/products/methi-grd.jpg" class="img-fluid" alt="">
+                        <div class="card-body ">
+                            <h3 class="card-heading text-center"> Methi Seed Ground</h3>
+                            <p class="card-para">As low as <span class="price">$5.34 </span></p>
+                            <button class="btn p-btn" data-toggle="modal" data-target="#myModal"
+                            data-product-id="Methi_Grd"> View Product</button>
+                        </div>
+                    </div>
+                    <div class="card m-card col-12 col-md-6 col-lg-3">
+                        <img src="Assets/images/categries/products/pumkin.jpg" class="img-fluid" alt="">
+                        <div class="card-body ">
+                            <h3 class="card-heading text-center">Pumkin Powder</h3>
+                            <p class="card-para">As low as <span class="price">$4.50 </span></p>
+                            <button class="btn p-btn" data-toggle="modal" data-target="#myModal" data-product-id="pumkin">
+                                View Product</button>
+                        </div>
+                    </div>
+                    <div class="card m-card col-12 col-md-6 col-lg-3">
+                        <img src="Assets/images/categries/products/red-pepper-grd.jpg" class="img-fluid" alt="">
+                        <div class="card-body ">
+                            <h3 class="card-heading text-center"> Red Pepper Ground</h3>
+                            <p class="card-para">As low as <span class="price">$5.50 </span></p>
+                            <button class="btn p-btn" data-toggle="modal" data-target="#myModal" data-product-id="Red_Pepper_Grd"> View Product</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row no-gutters mt-4"
+                    style="display: flex; justify-content: space-between; align-items: center;"data-aos="zoom-in-down">
+    
+                    <div class="card m-card col-12 col-md-6 col-lg-3">
+                        <img src="Assets/images/categries/products/star-seed.jpg" class="img-fluid" alt="">
+                        <div class="card-body ">
+                            <h3 class="card-heading text-center">Anise Star </h3>
+                            <p class="card-para">As low as <span class="price">$6.24 </span></p>
+                            <button class="btn p-btn" data-toggle="modal" data-target="#myModal" data-product-id="star">
+                                View Product</button>
+                        </div>
+                    </div>
+                    <div class="card m-card col-12 col-md-6 col-lg-3">
+                        <img src="Assets/images/categries/products/red-pepper-crush.jpg" class="img-fluid" alt="">
+                        <div class="card-body ">
+                            <h3 class="card-heading text-center"> Red Pepper Crush</h3>
+                            <p class="card-para">As low as <span class="price">$7.20 </span></p>
+                            <button class="btn p-btn" data-toggle="modal" data-target="#myModal"
+                                data-product-id="red_crush"> View Product</button>
+                        </div>
+                    </div>
+                    <div class="card m-card col-12 col-md-6 col-lg-3">
+                        <img src="Assets/images/categries/products/methi-seed.jpg" class="img-fluid" alt="">
+                        <div class="card-body ">
+                            <h3 class="card-heading text-center">Methi Seed</h3>
+                            <p class="card-para">As low as <span class="price">$7.20 </span></p>
+                            <button class="btn p-btn" data-toggle="modal" data-target="#myModal" data-product-id="methi">
+                                View Product</button>
+                        </div>
+                    </div>
+                    <div class="card m-card col-12 col-md-6 col-lg-3">
+                        <img src="Assets/images/categries/products/turmeric.jpg" class="img-fluid" alt="">
+                        <div class="card-body ">
+                            <h3 class="card-heading text-center"> Turmeric Powder</h3>
+                            <p class="card-para">As low as <span class="price">$5.34 </span></p>
+                            <button class="btn p-btn" data-toggle="modal" data-target="#myModal" data-product-id="turmeric">
+                                View Product</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row no-gutters mt-4"
+                    style="display: flex; justify-content: space-between; align-items: center;"data-aos="zoom-in-down">
+    
+                    <div class="card m-card col-12 col-md-6 col-lg-3">
+                        <img src="Assets/images/categries/products/ginger-ground.jpg" class="img-fluid" alt="">
+                        <div class="card-body ">
+                            <h3 class="card-heading text-center">Ginger Ground </h3>
+                            <p class="card-para">As low as <span class="price">$4.99 </span></p>
+                            <button class="btn p-btn" data-toggle="modal" data-target="#myModal"
+                                data-product-id="ginger_ground"> View Product</button>
+                        </div>
+                    </div>
+                    <div class="card m-card col-12 col-md-6 col-lg-3">
+                        <img src="Assets/images/categries/products/veg-flakes.jpg" class="img-fluid" alt="">
+                        <div class="card-body ">
+                            <h3 class="card-heading text-center"> Vegetable Flakes</h3>
+                            <p class="card-para">As low as <span class="price">$5.50 </span></p>
+                            <button class="btn p-btn" data-toggle="modal" data-target="#myModal"
+                            data-product-id="Veg_Flaks"> View Product</button>
+                        </div>
+                    </div>
+                    <div class="card m-card col-12 col-md-6 col-lg-3">
+                        <img src="Assets/images/categries/products/tikka.jpg" class="img-fluid" alt="">
+                        <div class="card-body ">
+                            <h3 class="card-heading text-center">Tikka</h3>
+                            <p class="card-para">As low as <span class="price">$4.50 </span></p>
+                            <button class="btn p-btn" data-toggle="modal" data-target="#myModal" data-product-id="tikka">
+                                View Product</button>
+                        </div>
+                    </div>
+                    <div class="card m-card col-12 col-md-6 col-lg-3">
+                        <img src="Assets/images/categries/products/zeera-seed.jpg" class="img-fluid" alt="">
+                        <div class="card-body ">
+                            <h3 class="card-heading text-center"> Fennel Seed</h3>
+                            <p class="card-para">As low as <span class="price">$5.34 </span></p>
+                            <button class="btn p-btn" data-toggle="modal" data-target="#myModal" data-product-id="Fennel">
+                                View Product</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+      
+        
+    <!-- modal -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12 col-lg-6  ">
+                                <div class="main-img d-flex">
+                                    <img src="" id="productImage"  alt="">
+                                </div>
+
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-6">
+                                <h2 class="modal-title" id="productName"></h2>
+                                <div class="modal-text">
+                                    <p class="modal-text mt-3" id="productDescription"></p>
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-12 col-lg-6 d-flex">
+                                            <h3 class="" id="productPrice">Price:$6</h3>
+                                            <a href="" class="ml-4 mt-1"><img src="Assets/images/review/star-4.png"></a>
+                                        </div>
+                                        <div class="col-sm-12 col-md-12 col-lg-6 d-flex">
+                                            <a href="" class="ml-4 mt-1"> Review</a>
+                                            <a href="" class="ml-4 mt-1">Recipe</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <input type="number" placeholder="1"
+                        style="text-align: center; width: 70px; height: 30px; border: 1px solid grey; border-radius: 2px;">
+                    <a href="" class="btn btn-cart "> add to cart</a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- modal ends -->
+    <!-- galley-starts -->
+    <section class="gallery" id="gallery">
+
+        <div class="container my-5">
+            <div class="col-12 mb-5">
+                <h2 class="heading">
+                    Gallery
+                    <hr class="mt-2"
+                        style="height: 2px; width:80px; background: orange; margin-left: 5px; margin: 0px auto;  ">
+
+                </h2>
+            </div>
+            <div class="row  row1">
+                <div class="col-12 col-md-6 col-lg-5  g-img"
+                    style="background-image: url(../Falavors/Assets/images/gallery/g6.jpg); width: 100%; height: 600px;">
+
+                </div>
+                <div class="col-12 col-md-6 col-lg-7 g-img"
+                    style="background-image: url(../Falavors/Assets/images/gallery/g1.jpg); height:600px;">
+                </div>
+            </div>
+            <div class="row row1">
+                <div class="col-12 col-md-12 col-lg-4 g-img "
+                    style="background-image: url(../Falavors/Assets/images/gallery/g2.jpg); height: 300px;"></div>
+                <div class="col-12 col-md-12 col-lg-4 g-img "
+                    style="background-image: url(../Falavors/Assets/images/gallery/g3.jpg); height: 300px;"></div>
+                <div class="col-12 col-md-12 col-lg-4 g-img "
+                    style="background-image: url(../Falavors/Assets/images/gallery/g4.jpg); height: 300px;"></div>
+
+            </div>
+            <div class="row row1">
+                <div class="col-12 g-img"
+                    style="background-image: url(../Falavors/Assets/images/gallery/g5.jpg); height: 400px;"></div>
+            </div>
+        </div>
+    </section>
+    <!-- gallery-ends -->
+    <!-- about-section-starts -->
+    <section class="about  container" id="about">
+        <div class="col-12">
+            <h2 class="heading">About Us
+                <hr class="mt-2"
+                    style="height: 2px; width:70px; background: orange; margin-left: px; margin: 0px auto;  ">
+            </h2>
+        </div>
+        <div class="row my-5">
+
+            <div class="col-lg-6 col-12" data-aos="zoom-in-down">
+                <img src="Assets/images/about-1.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="col-lg-6 col-12" data-aos="fade-down">
+                <div class="content">
+                    <span>Welcome to Flavors </span>
+                    <p>
+                        At Flavors , we're passionate about spices and their incredible ability to transform the
+                        ordinary into the extraordinary. Our journey began with a simple fascination for the rich
+                        tapestry of flavors that spices bring to cuisines worldwide.
+                    </p>
+                    <span>Our Story</span>
+                    <p>Founded by a team of seasoned culinary enthusiasts, Flavours was born from a shared love
+                        for exploration and a deep respect for the cultural significance of spices. Our story is woven
+                        with the threads of discovery, where every spice becomes a doorway to a new world of taste and
+                        tradition. From the bustling spice markets of Marrakech to the serene plantations.</p>
+                    <div class="contentbtn">
+                        <a href="" class="btn about-btn">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- about-section-ends -->
+    <!-- main-section-ends -->
+    <!-- contact-us-pop-up -->
+    <div class="modal fade" id="contactpopup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header d-flex border-bottom-0">
+                    <div class="col-10 ">
+                        <h3 class="modal-title  text-right" id="exampleModalLabel" style="margin-right: 4rem;"> Contact
+                            Us
+                        </h3>
+                        <hr
+                            style="height: 2px; width: 100px; background: orange; float: right; margin-right:6rem; margin-top: 5px; ">
+                    </div>
+                    <div class="col-2">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="close"> <span
+                                aria-hidden="true">&times;</span> </button>
+                    </div>
+                </div>
+                <form>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="name" id="name" class="form-control" placeholder="Enter Your Name " required
+                                aria-describedby="namehelp">
+                            <small id="namehelp" class="form-text ml-1 text-muted">Your information is safe with
+                                us</small>
+                        </div>
+                        <div class="form-group mt-1">
+                            <label for="email">Email ID</label>
+                            <input type="email" id="email" class="form-control" placeholder="Enter Your Email " required
+                                aria-describedby="emailhelp">
+
+                        </div>
+                        <div class="form-group mt-1">
+                            <label for="Address">Address</label>
+                            <input type="address" id="  address" class="form-control" placeholder="Enter Your Address "
+                                required aria-describedby="emailhelp">
+
+                        </div>
+                        <div class="form-group mt-1">
+                            <label for="number">Contact Number</label>
+                            <input type="number" id="number" class="form-control" placeholder="Enter Your Number "
+                                required aria-describedby="numberhelp">
+                        </div>
+                        <div class="form-group mt-1">
+                            <label for="message">Review</label>
+                            <textarea name="message" id="message" class="form-control" rows="3"
+                                placeholder="Enter Review"></textarea>
+                        </div>
+                        <div class="modal-footer d-flex justify-content-center ">
+                            <button type="submit" class="btn btn-form-modal">submit</button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <!-- top-header-starts -->
+    <div class="container-fluid top-header">
+        <div class="container ">
+            <div class="row  py-3  my-auto">
+                <div class="col-12 col-md-6 col-lg-6 text-white">
+                    <div class="top-header mt-1">
+                        <h4 class="mt-2"> Get in touch<span>: 03181033859</span></h4>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6 top-social ">
+                    <div class="social-icon">
+                        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-youtube"></i></a>
+                        <a href=""><i class="fa-brands fa-pinterest"></i></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- top-header-ends -->
+    <!-- Footer starts -->
+    <div class="container-fluid  my-footer ">
+        <div class="container">
+
+            <div class="row  footer-links justify-content-center">
+                <div class="col-sm-12 col-md-6 col-lg-3 mt-4 text-left ">
+                    <h4 class="logo logo-footer">FLA<span>VORS</span></h4>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto" style=" height: 2px; width: 110px;" />
+                    <p class="card-text">Flavours & Spice: Your ultimate spice destination!
+                        Explore global flavors, quality spices, and culinary delights on our website.
+                    </p>
+                    <a href="" class="btn  btn-contact" data-toggle="modal" data-target="#contactpopup"> Contact Us</a>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 mt-4">
+                    <h4 class="title">PRODUCTS</h4>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 110px; height: 2px;" />
+                    <div class="links">
+                        <a href="#New_Arrival">New Arrival</a><br>
+                        <a href="#Best_Sellers">Best Seller</a><br>
+                        <a href="#Hot_Deals">Hot Deals</a><br>
+                        <a href="#Spice_Seed">Spice seed</a><br>
+                        <a href="#Our_Product">Our Products</a><br>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 mt-4">
+                    <h4 class="title">USEFUL LINKS</h4>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 110px; height: 2px;" />
+                    <div class="links">
+                        <a href="#home">Home</a><br>
+                        <a href="#about">About</a><br>
+                        <a href="#gallery">Gallery</a><br>
+                        <a href="#product">Products</a><br>
+                        <a href="" data-toggle="modal" data-target="#contactpopup">Contact-us</a><br>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 mt-4">
+
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14480.068593130243!2d67.0743981!3d24.8632639!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33ea3db108f41%3A0x42acc4507358b160!2sAptech%20Learning%2C%20Shahrah%20e%20Faisal%20Center!5e0!3m2!1sen!2s!4v1701457729770!5m2!1sen!2s"
+                            width="100%" height="250px" style="border:0; border-radius: 5px;" allowfullscreen=""
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="container-fluid" style="margin: 0px;">
+                <div class="col-12 ">
+                    <marquee class="text-white" id="ticker" directon="left" scroll-am.ount="3"></marquee>
+
+                </div>
+
+            </footer>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!-- AOS link -->
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- j-query-link -->
+    <script src="Assets/js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+
+        <script>
+        
+            window.onscroll = function () {
+            var header = document.querySelector(".my-navbar");
+            if (window.pageYOffset > 50) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+
+        };
+            // top-btn
+            $("#tbtn").click(function () {
+                $("html, body").animate({ scrollTop: 0 }, 500);
+                return false;
+    
+            });
+    
+            // counter
+            let count = localStorage.getItem('visitorCount');
+            if (!count) {
+                count = 0;
+            }
+            document.getElementById('mycounter').textContent = count;
+    
+            count++;
+            document.getElementById('mycounter').textContent = count;
+    
+            localStorage.setItem('visitorCount', count);
+    
+    
+            // product modal start
+            $(document).ready(function () {
+    
+                $('[data-target="#myModal"]').on('click', function () {
+    
+                    var productId = $(this).data('product-id');
+    
+                    var productDetails = getProductDetails(productId);
+    
+                    $('#productImage').attr('src', productDetails.image);
+                    $('#productName').text(productDetails.name);
+                    $('#productDescription').text(productDetails.description);
+                    $('#productPrice').text(productDetails.price);
+    
+                    $('#myModal').show(500);
+                });
+    
+                // Function(replace this with your data source)
+                function getProductDetails(productId) {
+                    // product data object
+                    var productData = {
+                        onion_mix: { name: 'Onion Soup Mix', description: 'This onion soup mix is a perfect addition to any pantry. It pairs perfectly with many soups that need some extra color and flavor.  Ingredients; Onions, Celery Seeds, Parsley, Turmeric, Salt, Sugar & other spices.', price: '$6', image: 'Assets/images/categries/products/onion-mix.webp' },
+                        carrot: { name: 'Carrot Powder', description: 'Carrots are a member of the parsley family. They have been recognized as a health-giving food for thousands of years. They are high in vitamin A. Ingredients: Carrots', price: '$5.30', image: 'Assets/images/categries/products/carrot.jpg' },
+                        pumkin: { name: 'Pumkin Powder', description: 'Our Pumpkin Powder is made from fresh pumpkins of the Cucurbita pepo species that have been dried and ground into a finely ground consistency. You can also add pumpkin flavor to other foods, like soups, yogurt and pasta sauces. Ingredients: Dried Pumpkin.', price: '$4.50', image: 'Assets/images/categries/products/pumkin.jpg' },
+                        star: { name: 'Anise Star', description: 'Star Anise (Illicium Verum) is a star shaped fruit from an Evergreen Tree that is native to China. The tree bears yellow flower that ripens into a brown star shaped spice. Ingredients: Dried Star Anise.', price: '$6.24', image: 'Assets/images/categries/products/star-seed.jpg' },
+                        ginger_ground: { name: 'Ginger Ground', description: 'Ginger (Zingiber Officinale) is the root of a plant cultivated all over Asia. Ginger has a hot and spicy flavor that is also refreshing and sharp. Ingredients: Dried Ginger', price: '$4.99', image: 'Assets/images/categries/products/ginger-ground.jpg' },
+                        red_crush: { name: 'Red Pepper Crushed', description: 'Red Pepper is prepared from moderately pungent capsicums of Turkey and Southern America. The deeper the color, the better the quality. Ingredients: Red Chile Peppers', price: '$7.20', image: 'Assets/images/categries/products/red-pepper-crush.jpg' },
+                        turmeric: { name: 'Turmeric Ground', description: 'Turmeric (Curcuma longa) is the root of a plant which is in the same family as Ginger.The flesh is a bright orange and dries to a deep yellow-orange color.This flowering perennial has been cultivated for over 2,000 years in India. Ingredients: Turmeric, Contains Curcumin at 5%.', price: '$5.34', image: 'Assets/images/categries/products/turmeric.jpg' },
+                        tikka: { name: 'Tikka Spice', description: 'Tikka Masala is a hot, peppery Indian spice blend used in the popular Chicken Tikka Masala dish. Ingredients: it contains coriander, chili, cumin, black pepper, cloves, salt, star anise, cardamom, garlic, turmeric, nutmeg, cinnamon, mace, other herbs & spices.', price: '$4.50', image: 'Assets/images/categries/products/tikka.jpg' },
+                        clove: { name: 'Cloves Whole Seed', description: 'Cloves (Syzygium Aromaticum) are the unopened flower bud of an Evergreen Tree. Clove Oil has a numbing effect and is often used by dentists for tooth aches. A crushed Clove held in the mouth can help alleviate tooth pain. Ingredients: Dried cloves.', price: '$4.99', image: 'Assets/images/categries/products/Clove-seed.jpg' },
+                        kalonji: { name: 'Kalonji Seeds', description: 'Kalonji (Carom Carve) is a very old spice, there is evidence going back to the Stone Age of its use. It is the seed of a Biennial Plant that has delicate leaves and white blossoms. Kalonji is mainly used in Austrian and German cooking. The Black Kalonji Seed is smaller than traditional Caraway Seed and has more of an intense flavor. Ingredients: Kalonji Seeds', price: '$5.50', image: 'Assets/images/categries/products/kalongi-seed.jpg' },
+                        methi: { name: 'Methi Seeds', description: 'Methi (Trigonella Foenum Graecum) is a sturdy annual that is native to the Eastern Mediterranean. Methi seeds are a deep golden color with a smooth, hard surface and an angular shape. Ingredients: Methi Seeds', price: '7.20', image: 'Assets/images/categries/products/methi-seed.jpg' },
+                        Fennel: { name: 'Fennel Seeds', description: 'Fennel (Foeniculum Vulgare) is a perennial that flowers and also produces the seeds that are used as a cooking spice. The flavor of Fennel is similar to Anise or Licorice. Ingredients: Dried Fennel Seeds', price: '$5.34', image: 'Assets/images/categries/products/zeera-seed.jpg' },
+                        Poultry: { name: 'Poultry Seasoning', description: 'Poultry Seasoning is a spice blend used in the preparation of chicken, turkey and other poultry. Ingredients: salt, garlic, thyme, oregano, coriander, marjoram, white pepper, sage, lemon powder and cumin.', price: '$5.50', image: 'Assets/images/categries/products/poultry.jpg' },
+                        Sesame: { name: 'Sesame Seeds', description: 'White sesame seeds grow widely throughout the Orient and in India.  This seed soon became very popular with Southern cooking. These seeds are highly valued, being rich in protein and in polyunsaturated oil. Ingredients: White Sesame Seeds', price: '$4.99', image: 'Assets/images/categries/products/sesame-seed.jp/' },
+                        Blk_pepper_Grd: { name: 'Black Pepper Ground', description: 'Ground black pepper is prepared from the dried fruit of Piper nigrum L.  Our regular Ground Black Pepper is an 18 mesh. Ingredients: Black Peppercorns.', price: '$7.20', image: 'Assets/images/categries/products/blk-pepper-grd.jpg' },
+                        Bread_Dipping_Blnd: { name: 'Bread Dipping Blend', description: 'Try our NEW Bread Dipping Blend.  This blend is a delicious combination of five different ground peppercorns, a wonderful array of italian style herbs, aleppo pepper and just the right amount of garlic salt.  Sprinkle a generous amount on a plate and add your favorite olive oil.  Perfect with an Italian loaf or Fench roll, this blend is sure to bring some sparkle to any dinner table.', price: '$4.99', image: 'Assets/images/categries/products/breed-dip.jpg' },
+                        Garlic_Powder: { name: 'Garlic Powder', description: 'Garlic (Allium sativum) is a member of the Lily family and is a widely used and commonly known spice. Along with being a wonderful flavoring agent Garlic has been used to ward off evil spirits, improve blood circulation, ncrease vitality and strengthen eyesight. Ingredients: Garlic', price: '$7.20', image: 'Assets/images/categries/products/garlic.jpg' },
+                        Red_Pepper_Grd: { name: 'Red Pepper Ground', description: 'Red Pepper Ground (Capsicum frutescens) is made from the Capsicum Chile. This is one of the most pungent varieties of chile. Red Pepper is made from grinding both the flesh and the seeds of the chile. The name of the Red Pepper probably came from the area of South America where the chile originated. Red Pepper Ground is believed to be beneficial for the circulatory system. Ingredients: Dried Chiles.', price: '$5.50', image: 'Assets/images/categries/products/red-pepper-grd.jpg' },
+                        Veg_Flaks: { name: 'Vegetables Flakes', description: 'This Dried Vegetable Blend is the perfect combination of onion, celery, carrot, garlic  and bell pepper. It is a great step-saver for soups, stews and sauces. Our Dried Vegetable Blend will keep for months in your pantry, ready to use whenever fresh vegetables are not at your fingertips. Ingredients: Bell peppers, onion, carrots, celery, potato, tomato and cabbage.', price: '$5.50', image: 'Assets/images/categries/products/veg-flakes.jpg' },
+                        Methi_Grd: { name: 'Methi Seeds Ground', description: 'Methi (Trigonella Foenum Graecum) is a sturdy annual that is native to the Eastern Mediterranean. Methi seeds are a deep golden color with a smooth, hard surface and an angular shape. Ingredients: Methi Seeds', price: '$5.34', image: 'Assets/images/categries/products/methi-grd.jpg' }
+                    };
+    
+                    return productData[productId];
+                }
+            });
+    
+            // modal end
+            //  ticker
+            function updateTicker() {
+                const tickerElement = document.getElementById('ticker');
+                const now = new Date();
+                const options = {
+                    weekday: 'long',
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric',
+                    hour: 'numeric',
+                    minute: 'numeric',
+                    second: 'numeric',
+                    timeZoneName: 'short',
+                };
+                const formattedDateTime = now.toLocaleString('en-US', options);
+                const location = ''; // Replace with your actual location
+                tickerElement.textContent = `${formattedDateTime} - ${location}`;
+            }
+    
+            updateTicker();
+            setInterval(updateTicker,);
+            navigator.geolocation.getCurrentPosition(function (position) {
+    
+                var latitude = position.coords.latitude;
+                var longitude = position.coords.longitude;
+    
+    
+                var location = document.getElementById('location');
+                location.innerText = `Latitude: ${latitude}, Longitude: ${longitude}`;
+            });
+    
+        </script>
+   
+   
+   <script>
+        // stickey-header     
+        window.onscroll = function () {
+            var header = document.querySelector(".my-nav");
+            if (window.pageYOffset > 0) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+
+        };
+
+        // navbar-closed
+
+        function closeNavbar() {
+            $('#navbarNav').collapse('hide');
+        }
+        // top-btn
+        $("#tbtn").click(function () {
+            $("html, body").animate({ scrollTop: 0 }, 1000);
+            // return false;
+
+        });
+        window.onscroll = function () {
+            var btn = document.getElementById("tbtn");
+            if (window.pageYOffset > 500) {
+                btn.classList.add('show');
+            } else {
+                btn.classList.remove('show');
+            }
+        };
+
+    </script>
+</body>
+
+</html>
